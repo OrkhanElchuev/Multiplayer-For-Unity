@@ -1,7 +1,7 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
 
 public class NetworkController : MonoBehaviourPunCallbacks
 {
@@ -12,12 +12,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
         PhotonNetwork.ConnectUsingSettings();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    // In case of successfull connection
     public override void OnConnectedToMaster()
     {
         // Display with which region we established connection
