@@ -7,14 +7,11 @@ using UnityEngine;
 public class QuickStartLobbyController : MonoBehaviourPunCallbacks
 {
     // Button to  create and join a game
-    [SerializeField]
-    private GameObject quickStartButton;
+    [SerializeField] private GameObject quickStartButton;
     // Button to stop searching for a game to join
-    [SerializeField]
-    private GameObject quickCancelButton;
+    [SerializeField] private GameObject quickCancelButton;
     // Set the number of players in the room at one time
-    [SerializeField]
-    private int roomSize;
+    [SerializeField] private int roomSize;
 
     // In case of successfull connection
     public override void OnConnectedToMaster()
