@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class NetworkController : MonoBehaviourPunCallbacks
 {
+    [SerializeField] private int gameVersion;
+    
     // Start is called before the first frame update
     void Start()
     {
+        PhotonNetwork.GameVersion = gameVersion.ToString();
         // Connects to Photon master servers
         PhotonNetwork.ConnectUsingSettings();
     }

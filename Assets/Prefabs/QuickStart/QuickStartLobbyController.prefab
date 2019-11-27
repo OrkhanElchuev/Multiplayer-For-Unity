@@ -45,4 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quickStartButton: {fileID: 0}
   quickCancelButton: {fileID: 0}
-  roomSize: 4
+  roomSize: 3
